@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FE32EBE1AE2E2B800B86505 /* TTListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE32EBC1AE2E2B800B86505 /* TTListViewController.m */; };
+		2FE32EBF1AE2E2B800B86505 /* TTListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE32EBD1AE2E2B800B86505 /* TTListViewController.xib */; };
+		2FE32EC21AE2E30C00B86505 /* TTListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE32EC11AE2E30C00B86505 /* TTListTableViewDataSource.m */; };
+		2FE32ED11AE33CD600B86505 /* TTEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE32ED01AE33CD600B86505 /* TTEntry.m */; };
+		2FE32ED41AE33F0A00B86505 /* TTProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE32ED31AE33F0A00B86505 /* TTProject.m */; };
 		7116F77619421700006C8F06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7116F77519421700006C8F06 /* Foundation.framework */; };
 		7116F77819421700006C8F06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7116F77719421700006C8F06 /* CoreGraphics.framework */; };
 		7116F77A19421700006C8F06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7116F77919421700006C8F06 /* UIKit.framework */; };
@@ -32,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FE32EBB1AE2E2B800B86505 /* TTListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTListViewController.h; sourceTree = "<group>"; };
+		2FE32EBC1AE2E2B800B86505 /* TTListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTListViewController.m; sourceTree = "<group>"; };
+		2FE32EBD1AE2E2B800B86505 /* TTListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTListViewController.xib; sourceTree = "<group>"; };
+		2FE32EC01AE2E30C00B86505 /* TTListTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTListTableViewDataSource.h; sourceTree = "<group>"; };
+		2FE32EC11AE2E30C00B86505 /* TTListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTListTableViewDataSource.m; sourceTree = "<group>"; };
+		2FE32ECF1AE33CD600B86505 /* TTEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTEntry.h; sourceTree = "<group>"; };
+		2FE32ED01AE33CD600B86505 /* TTEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTEntry.m; sourceTree = "<group>"; };
+		2FE32ED21AE33F0A00B86505 /* TTProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTProject.h; sourceTree = "<group>"; };
+		2FE32ED31AE33F0A00B86505 /* TTProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTProject.m; sourceTree = "<group>"; };
 		7116F77219421700006C8F06 /* Time-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7116F77519421700006C8F06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7116F77719421700006C8F06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,8 +121,17 @@
 		7116F77B19421700006C8F06 /* Time-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				2FE32ECF1AE33CD600B86505 /* TTEntry.h */,
+				2FE32ED01AE33CD600B86505 /* TTEntry.m */,
+				2FE32ED21AE33F0A00B86505 /* TTProject.h */,
+				2FE32ED31AE33F0A00B86505 /* TTProject.m */,
 				7116F78419421700006C8F06 /* TTAppDelegate.h */,
 				7116F78519421700006C8F06 /* TTAppDelegate.m */,
+				2FE32EC01AE2E30C00B86505 /* TTListTableViewDataSource.h */,
+				2FE32EC11AE2E30C00B86505 /* TTListTableViewDataSource.m */,
+				2FE32EBB1AE2E2B800B86505 /* TTListViewController.h */,
+				2FE32EBC1AE2E2B800B86505 /* TTListViewController.m */,
+				2FE32EBD1AE2E2B800B86505 /* TTListViewController.xib */,
 				7116F78719421700006C8F06 /* Images.xcassets */,
 				7116F77C19421700006C8F06 /* Supporting Files */,
 			);
@@ -221,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7116F78019421700006C8F06 /* InfoPlist.strings in Resources */,
+				2FE32EBF1AE2E2B800B86505 /* TTListViewController.xib in Resources */,
 				7116F78819421700006C8F06 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE32EC21AE2E30C00B86505 /* TTListTableViewDataSource.m in Sources */,
+				2FE32ED11AE33CD600B86505 /* TTEntry.m in Sources */,
 				7116F78619421700006C8F06 /* TTAppDelegate.m in Sources */,
 				7116F78219421700006C8F06 /* main.m in Sources */,
+				2FE32EBE1AE2E2B800B86505 /* TTListViewController.m in Sources */,
+				2FE32ED41AE33F0A00B86505 /* TTProject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +466,7 @@
 				7116F7A019421700006C8F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7116F7A119421700006C8F06 /* Build configuration list for PBXNativeTarget "Time-TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +475,7 @@
 				7116F7A319421700006C8F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
