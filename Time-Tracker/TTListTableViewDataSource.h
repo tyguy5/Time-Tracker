@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TTListTableViewDataSource : NSObject
+@interface TTListTableViewDataSource : NSObject <UITableViewDataSource>
 
 @end

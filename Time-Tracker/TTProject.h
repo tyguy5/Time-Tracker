@@ -7,7 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TTEntry.h"
 
 @interface TTProject : NSObject
+
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSArray *entries;
+
+- (NSDictionary *)projectDictionary;
+- (id)initWithDictionary:(NSDictionary *)dictionary;
+
+- (NSString *)projectTime;
+
+- (void)startNewEntry;
+- (void)endCurrentEntry;
+
+- (void)addEntry:(TTEntry *)entry;
+- (void)removeEntry:(TTEntry *)entry;
+
+- (void)synchronize;
 
 @end
