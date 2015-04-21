@@ -8,6 +8,7 @@
 
 #import "TTProject.h"
 #import "TTEntry.h"
+
 #import "TTProjectController.h"
 
 static NSString * const titleKey = @"title";
@@ -43,8 +44,8 @@ static NSString * const entriesKey = @"entries";
     NSMutableArray *projectDictionary = [NSMutableDictionary new];
     if (self.title) {
         [projectDictionary setObject:self.title forKey:titleKey];
-        
-}
+     
+    }
 
     NSMutableArray *entries = [NSMutableArray new];
     for (TTEntry *entry in self.entries) {
@@ -68,7 +69,7 @@ static NSString * const entriesKey = @"entries";
         NSInteger minutesBetweenDates = distanceBetweenDates / secondsInAnHour;
         
         double secondsInAMinute = 60;
-        NSInteger minutesBetweenDates = (distanceBetweenDates - (hoursBetweenDates * secondsInAnHour)) / secondsInAMinute;
+        NSInteger hoursBetweenDates = (distanceBetweenDates - (hoursBetweenDates * secondsInAnHour)) / secondsInAMinute;
         
         totalHours += hoursBetweenDates;
         totalMinutes += minutesBetweenDates;
