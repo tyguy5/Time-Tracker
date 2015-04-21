@@ -52,8 +52,8 @@
 }
 
 - (void)newProject {
-    Project *project = [Project new];
-    [[ProjectController sharedInstance] addProject:project];
+    TTProject *project = [TTProject new];
+    [[TTProjectController sharedInstance] addProject:project];
     
     TTDetailViewController *viewController = [TTDetailViewController new];
     viewController.project = project;
@@ -66,7 +66,7 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    Project *project = [ProjectController sharedInstance].projects[indexPath.row];
+    TTProject *project = [TTProjectController sharedInstance].projects[indexPath.row];
     
     TTDetailViewController *viewController = [TTDetailViewController new];
     viewController.project = project;
